@@ -139,6 +139,8 @@ prompt_agnoster_main() {
   prompt_context
   prompt_virtualenv
   prompt_dir
+  prompt_end
+  printf "\n"
   prompt_git
   prompt_end
 }
