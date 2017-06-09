@@ -98,6 +98,7 @@ prompt_git() {
     else
       ref="$DETACHED ${ref/.../}"
     fi
+    CURRENT_BG=$color
     prompt_segment $color $PRIMARY_FG
     print -Pn " $ref"
   fi
@@ -131,6 +132,14 @@ prompt_virtualenv() {
   fi
 }
 
+# Display dollar $ symbol
+prompt_input_symbol() {
+  color=cyan
+  CURRENT_BG=$color
+  printf "\n"
+  prompt_segment $color $PRIMARY_FG ' $ '
+}
+
 ## Main prompt
 prompt_agnoster_main() {
   RETVAL=$?
@@ -139,7 +148,11 @@ prompt_agnoster_main() {
   prompt_context
   prompt_virtualenv
   prompt_dir
+  prompt_end
+  printf "\n"
   prompt_git
+  prompt_end
+  prompt_input_symbol
   prompt_end
 }
 
