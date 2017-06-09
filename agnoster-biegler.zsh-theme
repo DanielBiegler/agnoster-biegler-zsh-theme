@@ -151,6 +151,8 @@ prompt_agnoster_main() {
   printf "\n"
   prompt_git
   prompt_end
+  prompt_input_symbol
+  prompt_end
 }
 
 prompt_agnoster_precmd() {
