@@ -131,6 +131,14 @@ prompt_virtualenv() {
   fi
 }
 
+# Display dollar $ symbol
+prompt_input_symbol() {
+  color=cyan
+  CURRENT_BG=$color
+  printf "\n"
+  prompt_segment $color $PRIMARY_FG ' $ '
+}
+
 ## Main prompt
 prompt_agnoster_main() {
   RETVAL=$?
