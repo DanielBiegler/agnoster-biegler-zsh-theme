@@ -100,7 +100,7 @@ prompt_git() {
     fi
     CURRENT_BG=$color
     prompt_segment $color $PRIMARY_FG
-    print -Pn " $ref"
+    print -Pn "\n $ref"
   fi
 }
 
@@ -149,7 +149,6 @@ prompt_agnoster_main() {
   prompt_virtualenv
   prompt_dir
   prompt_end
-  printf "\n"
   prompt_git
   prompt_end
   prompt_input_symbol
