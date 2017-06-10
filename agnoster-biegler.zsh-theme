@@ -38,6 +38,7 @@ DETACHED="\u27a6"
 CROSS="\u2718"
 LIGHTNING="\u26a1"
 GEAR="\u2699"
+INPUT="\u03BB"
 
 # Begin a segment
 # Takes two arguments, background and foreground. Both can be omitted,
@@ -132,12 +133,12 @@ prompt_virtualenv() {
   fi
 }
 
-# Display dollar $ symbol
+# Display input symbol in prompt
 prompt_input_symbol() {
   color=cyan
   CURRENT_BG=$color
   printf "\n"
-  prompt_segment $color $PRIMARY_FG ' $ '
+  prompt_segment $color $PRIMARY_FG " $INPUT "
 }
 
 ## Main prompt
