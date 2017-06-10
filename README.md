@@ -27,7 +27,7 @@ To test if your terminal and font support it, check that all the necessary chara
 - Working directory
 - Elevated (root) privileges (⚡)
 
-![Screenshot](https://gist.githubusercontent.com/agnoster/3712874/raw/screenshot.png)
+![Screenshot](https://github.com/DanielBiegler/agnoster-zsh-theme/blob/master/screenshot.png)
 
 ## Future Work
 
