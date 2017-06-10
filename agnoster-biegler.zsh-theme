@@ -132,7 +132,7 @@ prompt_virtualenv() {
   fi
 }
 
-# Display dollar $ symbol
+# Display input symbol in prompt
 prompt_input_symbol() {
   color=cyan
   CURRENT_BG=$color
